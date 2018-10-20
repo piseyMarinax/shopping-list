@@ -54,6 +54,7 @@ class ItemAPIController extends APIBaseController
      */
     public function show(Shopping $shopping,Item $item)
     {
+
         if (is_null($item)) {
             return $this->sendError('Post not found.');
         }
